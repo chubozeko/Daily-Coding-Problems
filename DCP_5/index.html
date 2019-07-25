@@ -1,0 +1,34 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <meta charset="utf-8">
+
+  </head>
+  <body>
+    <script type="text/javascript">
+      
+      function cons(a, b) {
+        var pair = { first: a, last: b };
+        return pair;
+      }
+
+      function car(pair) {
+        return pair.first;
+      }
+  
+      function cdr(pair) {
+        return pair.last;
+      }
+
+      function setup() {
+        let x = cons(5,9);
+        console.log('New pair of (5, 9) ', x);
+        console.log('First of pair: ', car(x));
+        console.log('Last of pair: ', cdr(x));
+      }
+
+    </script>
+  
+
+</body></html>
